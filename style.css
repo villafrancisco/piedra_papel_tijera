@@ -52,7 +52,6 @@ header {
 	margin-top: 20px;
 }
 
-.modal,
 .alert,
 .numround {
 	position: fixed;
@@ -92,22 +91,4 @@ header {
 }
 .modal--show {
 	transform: scale(1);
-}
-
-.modal .detail {
-	background-color: #4a7ecd;
-	padding: 100px;
-
-	position: relative;
-}
-
-.modal--open {
-	overflow: hidden;
-}
-.detail #close {
-	color: white;
-	position: absolute;
-	top: 16px;
-	right: 16px;
-	cursor: pointer;
 }
