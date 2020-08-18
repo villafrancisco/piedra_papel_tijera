@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Piedra, papel o tijera</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="content">
+			<header>
+				<h1>Piedra, papel o tijera</h1>
+			</header>
+			<div class="options" id="options">
+				<button class="btn" id="play">JUGAR</button>
+				<button class="btn" id="rondas">RONDAS</button>
+				<img id="main-image" src="images/fingers.png" />
+			</div>
+			<div class="player hide" id="player">
+				<!-- <button class="btn" id="replay">JUGAR OTRA</button>
+				<button class="btn" id="exit">VOLVER</button> -->
+				<div class="fingers" id="fingers">
+					<img src="images/piedra.png" id="piedra" alt="piedra" />
+					<img src="images/papel.png" id="papel" alt="papel" />
+					<img src="images/tijeras.png" id="tijeras" alt="tijeras" />
+				</div>
+
+				<div class="time" id="time"></div>
+			</div>
+		</div>
+		<div class="modal" id="modal">
+			<div class="detail" id="detail">
+				<i class="far fa-2x fa-window-close" id="close"></i>
+			</div>
+		</div>
+		<div class="numround" id="numrounds">
+			<div class="numround__item">
+				<h3>Elige al mejor de:</h3>
+				<select name="select" id="select-numround">
+					<option value="1" selected>1</option>
+					<option value="3">3</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="alert" id="alert"></div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #4a7ecd;
+	color: antiquewhite;
+}
+header {
+	text-align: center;
+}
+.options {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.btn {
+	display: block;
+	font-weight: bold;
+	padding: 10px 20px;
+	background-color: antiquewhite;
+	border: none;
+	outline: none;
+	border: 1px solid antiquewhite;
+	margin-bottom: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 150px;
+}
+.btn:hover {
+	cursor: pointer;
+}
+.btn:focus {
+	border: 1px solid black;
+}
+.fingers {
+	display: flex;
+	justify-content: space-evenly;
+}
+.player {
+	position: relative;
+}
+.hide {
+	display: none;
+}
+.fingers img:hover {
+	cursor: pointer;
+}
+.time {
+	font-size: 120px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.modal,
+.alert,
+.numround {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(220, 220, 220, 0.8);
+	transform: scale(0);
+	transition: transform 0.3s;
+	overflow: hidden;
+	z-index: 100;
+}
+.alert p {
+	padding: 20px;
+	background-color: white;
+	color: red;
+	font-weight: bold;
+	border-radius: 5px;
+}
+.numround .numround__item {
+	padding: 20px;
+	background-color: #4a7ecd;
+	color: black;
+}
+.numround .numround__item select {
+	width: 140px;
+	padding: 5px;
+
+	font-size: 18px;
+}
+.modal--show {
+	transform: scale(1);
+}
+
+.modal .detail {
+	background-color: #4a7ecd;
+	padding: 100px;
+
+	position: relative;
+}
+
+.modal--open {
+	overflow: hidden;
+}
+.detail #close {
+	color: white;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	cursor: pointer;
+}
